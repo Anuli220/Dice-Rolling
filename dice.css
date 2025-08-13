@@ -1,0 +1,61 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #2c3e50, #3498db);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    flex-direction: column;
+}
+
+h1{
+    margin-bottom: 30px;
+    font-size: 3em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.dice-container{
+    display: flex;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+.dice{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    color: #2c3e50;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    animation: none;
+}
+
+.rollButton{
+    padding: 15px 30px;
+    font-size: 2rem;
+    border: none;
+    border-radius: 30px;
+    background-color: #e74c3c;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in;
+}
+
+.roll-button:hover{
+    background-color: #c0392b;
+}
+
+@keyframes shake{
+    0%{transform: rotate(0deg);}
+    25%{transform: rotate(10deg);}
+    50%{transform: rotate(-10deg);}
+    75%{transform: rotate(10deg);}
+    100%{transform: rotate(0deg);}
+}
